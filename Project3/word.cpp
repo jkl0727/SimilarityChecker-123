@@ -4,6 +4,8 @@ using namespace std;
 class wordChecker
 {
 public:
+	explicit wordChecker() {};
+
 	int lengthCompare(const string &str1, const string &str2)
 	{
 		int gab = 0;
