@@ -3,11 +3,11 @@
 
 class wordFixture : public testing::Test
 {
-	
+public:
+	wordChecker checker{};
 };
 
 TEST_F(wordFixture, CompareAlpha) {
-	wordChecker checker;
 	EXPECT_EQ(checker.wordCompare("ASD", "DSA"), 40);
 	EXPECT_EQ(checker.wordCompare("A", "B"), 0);
 	EXPECT_EQ(checker.wordCompare("AAABB", "BA"), 40);
