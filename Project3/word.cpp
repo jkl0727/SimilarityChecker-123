@@ -16,7 +16,7 @@ public:
 			gab = str2.length() - str1.length();
 			short_len = str1.length();
 		}
-		int score = roundf((1 - ((float)gab / short_len)) * 60);
-		return score;
+		
+		return roundf((1 - ((float)gab / short_len)) * 60);
 	}
 };
